@@ -5,7 +5,6 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from datetime import *
-import pytz
 from icalendar import Calendar, Event
 
 
