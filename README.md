@@ -1,6 +1,7 @@
 # ZJU-Calendar-Maker
 一键生成课程表ics文件, 可直接导入iOS日历
 ## 功能
+该脚本能实现浙江大学课程表自动抓取并一键转换为 ics 日历文件，同时具备区别春夏秋冬学期，自动识别单双周课程，节假日无课，调休自动转换等功能。 
 导入Apple日历效果如下：
 
 <img width="1440" alt="截屏2022-08-31 22 07 03" src="https://user-images.githubusercontent.com/59506669/187703480-85a36edc-9cc0-4fa7-95e9-2dffb91e4c6f.png">
@@ -22,7 +23,7 @@ from icalendar import Calendar, Event
 ```
 
 ### Step2
-下载 timetable.py 文件，修改 xh 为自己的学号，并用 chrome 等浏览器登录 jwbinfosys.zju.edu.cn 进入个人课表界面，右键点击检查，点击network，查看 xskbcx.aspx 的cookie，找到ASP.NET_SessionId，并填写进去
+下载 timetable.py 文件，修改 xh 为自己的学号，并用 chrome 等浏览器登录 jwbinfosys.zju.edu.cn 进入个人课表界面，右键点击检查，点击 network ，查看 xskbcx.aspx 的 cookie ，找到 ASP.NET_SessionId ，并填写进去
 ```python3
 if __name__ == '__main__':
     # 个人基本信息
