@@ -8,6 +8,6 @@
 <img width="1440" alt="截屏2022-08-31 22 07 42" src="https://user-images.githubusercontent.com/59506669/187704281-112eca0a-e898-4339-8aaa-681484eec1d0.png">
 
 ## 使用方法
-、、、python3
+、、、
 
 、、、
