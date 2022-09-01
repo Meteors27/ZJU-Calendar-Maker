@@ -35,3 +35,9 @@ if __name__ == '__main__':
 ### Step3
 运行 timetable.py 文件，在同目录下生成 timetable.ics 文件，将该 ics 文件导入 Apple 日历，大功告成！
 <img width="687" alt="截屏2022-08-31 22 04 39" src="https://user-images.githubusercontent.com/59506669/187709391-a342e111-a66b-4544-af0c-4a547c463770.png">
+
+### Reference
+https://icalendar.readthedocs.io/en/latest/usage.html
+https://www.jianshu.com/p/237c336f0b7f
+https://www.jianshu.com/p/4f67fd92acfc
+https://www.cnblogs.com/tkqasn/p/6001134.html
