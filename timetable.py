@@ -32,54 +32,54 @@ def transdate(tmp):
     elif tm[0] == '2':
         start = time(8, 50, 0)
     elif tm[0] == '3':
-        start = time(9, 50, 0)
+        start = time(10, 0, 0)
     elif tm[0] == '4':
-        start = time(10, 40, 0)
+        start = time(10, 50, 0)
     elif tm[0] == '5':
-        start = time(11, 30, 0)
+        start = time(11, 40, 0)
     elif tm[0] == '6':
-        start = time(13, 15, 0)
+        start = time(13, 25, 0)
     elif tm[0] == '7':
-        start = time(14, 5, 0)
+        start = time(14, 15, 0)
     elif tm[0] == '8':
-        start = time(14, 55, 0)
+        start = time(15, 5, 0)
     elif tm[0] == '9':
-        start = time(15, 55, 0)
+        start = time(16, 15, 0)
     elif tm[0] == '10':
-        start = time(16, 45, 0)
+        start = time(17, 5, 0)
     elif tm[0] == '11':
-        start = time(18, 30, 0)
+        start = time(18, 50, 0)
     elif tm[0] == '12':
-        start = time(19, 20, 0)
+        start = time(19, 40, 0)
     elif tm[0] == '13':
-        start = time(20, 10, 0)
+        start = time(20, 30, 0)
 
     if tm[-1] == '1':
         end = time(8, 45, 0)
     elif tm[-1] == '2':
         end = time(9, 35, 0)
     elif tm[-1] == '3':
-        end = time(10, 35, 0)
+        end = time(10, 45, 0)
     elif tm[-1] == '4':
-        end = time(11, 25, 0)
+        end = time(11, 35, 0)
     elif tm[-1] == '5':
-        end = time(12, 15, 0)
+        end = time(12, 25, 0)
     elif tm[-1] == '6':
-        end = time(14, 0, 0)
+        end = time(14, 10, 0)
     elif tm[-1] == '7':
-        end = time(14, 50, 0)
+        end = time(15, 0, 0)
     elif tm[-1] == '8':
-        end = time(15, 40, 0)
+        end = time(15, 50, 0)
     elif tm[-1] == '9':
-        end = time(16, 40, 0)
+        end = time(17, 0, 0)
     elif tm[-1] == '10':
-        end = time(17, 30, 0)
+        end = time(17, 50, 0)
     elif tm[-1] == '11':
-        end = time(19, 15, 0)
+        end = time(19, 35, 0)
     elif tm[-1] == '12':
-        end = time(20, 5, 0)
+        end = time(20, 25, 0)
     elif tm[-1] == '13':
-        end = time(20, 55, 0)
+        end = time(21, 15, 0)
 
     return weekday, start, end, tmp[2]
 
