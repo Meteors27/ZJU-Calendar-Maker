@@ -19,7 +19,7 @@ import icalendar
 ```
 
 ### Step2
-下载 `timetable.py` 文件，填写 `username` 和 `password` 为浙大统一身份认证账户密码（默认生成2022-2023学年秋冬课表），运行程序。
+下载 `timetable.py` 文件，填写 `username` 和 `password` 为浙大统一身份认证账户密码，运行程序（默认生成2022-2023学年秋冬课表）。
 
 ### Step3
 运行 `timetable.py `文件，在同目录下生成 `timetable.ics` 文件，将该文件导入`Apple`日历，大功告成！
@@ -35,7 +35,7 @@ data = {'xnm': '2022-2023'}
 ```python3
 semester_info = [
     {'semester': '秋', 'start': '2022-09-12', 'end': '2022-11-06'},
-    {'semester': '冬', 'start': '2022-11-07', 'end': '2023-01-01'},
+    {'semester': '冬', 'start': '2022-11-07', 'end': '2023-01-01'}
 ]
 ```
 
@@ -59,6 +59,10 @@ exchange = [
 ***
 
 ### 待改进的地方
+* 地址
+* 考试信息
+* event uid
+* 相同连续课程拼接
 
 
 ### 致谢
