@@ -12,21 +12,21 @@
 
 ## 使用方法
 ### Step1
-安装以下依赖
+安装以下库
 ```python3
 import requests
 import icalendar
 ```
 
 ### Step2
-下载 timetable.py 文件，填写 `username` 和 `password` 为浙大统一身份认证账户密码（默认生成2022-2023学年秋冬课表），运行程序。
+下载 `timetable.py` 文件，填写 `username` 和 `password` 为浙大统一身份认证账户密码（默认生成2022-2023学年秋冬课表），运行程序。
 
 ### Step3
-运行 timetable.py 文件，在同目录下生成 timetable.ics 文件，将该 ics 文件导入 Apple 日历，大功告成！
+运行 `timetable.py `文件，在同目录下生成 `timetable.ics` 文件，将该文件导入`Apple`日历，大功告成！
 <img width="687" alt="截屏2022-08-31 22 04 39" src="https://user-images.githubusercontent.com/59506669/187709391-a342e111-a66b-4544-af0c-4a547c463770.png">
 
 ### 生成自定义学期课表的方法
-`data`表示学年，这里应替换成您希望生成课表的学年
+`data`表示学年，这里应替换成您希望生成课表的学年。
 ```python3
 data = {'xnm': '2022-2023'}
 ```
@@ -39,7 +39,7 @@ semester_info = [
 ]
 ```
 
-`holiday`表示节假日的日期，list中每一组小的list中的两个元素分别表示节日的开始和结束日期。请自行参考浙江大学校历的官方安排。
+`holiday`表示节假日的日期，`holiday`中每一组小的`list`中的两个元素分别表示节日的开始和结束日期。请自行参考浙江大学校历的官方安排。
 ```python3
 holiday = [
     ['2022-10-01', '2022-10-07'],
@@ -47,7 +47,7 @@ holiday = [
 ]
 ```
 
-`exchange`表示调休的日期，list中每一组小的list中的两个元素分别表示对换的两个日期。请自行参考浙江大学校历的官方安排。
+`exchange`表示调休的日期，`excahnge`中每一组小的`list`中的两个元素分别表示对换的两个日期。请自行参考浙江大学校历的官方安排。
 ```python3
 exchange = [
     ['2022-10-08', '2022-10-06'],
@@ -65,8 +65,11 @@ exchange = [
 
 ### Reference
 https://icalendar.readthedocs.io/en/latest/usage.html
+
 https://www.jianshu.com/p/237c336f0b7f
+
 https://www.jianshu.com/p/4f67fd92acfc
+
 https://www.cnblogs.com/tkqasn/p/6001134.html
 
 
