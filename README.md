@@ -12,7 +12,7 @@
 
 ## 使用方法
 ### Step1
-首先需要有`python3`环境，然后运行在命令行运行以下代码，安装脚本需要的两个库：
+首先需要有`python3`环境，然后在命令行运行以下代码，安装脚本需要的两个库：
 ```python3
 pip install requests
 pip install icalendar
