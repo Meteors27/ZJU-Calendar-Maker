@@ -73,9 +73,9 @@ exchange = [
 ### 待改进的地方
 * 地址
 * 考试信息
-* event uid
 * 相同连续课程拼接
 
+***
 
 ### 致谢
 感谢<a href="https://github.com/smd1121">smd1121</a>的<a href="https://github.com/smd1121/ZJUAutoScoreQuery">ZJUAutoScoreQuery</a>仓库，教会了我如何实现浙大统一身份认证登录。
