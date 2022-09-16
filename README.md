@@ -78,6 +78,8 @@ exchange = [
 
 
 ### 致谢
+感谢<a href="https://github.com/smd1121">smd1121</a>的<a href="https://github.com/smd1121/ZJUAutoScoreQuery">ZJUAutoScoreQuery</a>仓库，教会了我如何实现浙大统一身份认证登录。
+
 
 ### Reference
 https://icalendar.readthedocs.io/en/latest/usage.html
