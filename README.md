@@ -25,7 +25,7 @@ pip install icalendar
 
 点击绿色的`code`按钮，然后点击`download zip`即可。
 
-找到第231和234行，填写 `username` 和 `password` 为浙大统一身份认证账户密码，运行程序（默认生成2022-2023学年秋冬课表，所以其他数据如`data`, `holiday`, `exchange`不需要改动）。
+找到第230和233行，填写 `username` 和 `password` 为浙大统一身份认证账户密码，运行程序（默认生成2022-2023学年秋冬课表，所以其他数据如`data`, `holiday`, `exchange`不需要改动）。
 
 ### Step3
 运行 `timetable.py `文件，在同目录下生成 `timetable.ics` 文件，将该文件导入`Apple`日历，大功告成！
