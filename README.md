@@ -12,14 +12,14 @@
 
 ## 使用方法
 ### Step1
-安装以下库
+首先需要有`python3`环境，然后运行在命令行运行以下代码，安装脚本需要的两个库：
 ```python3
-import requests
-import icalendar
+pip install requests
+pip install icalendar
 ```
 
 ### Step2
-下载 `timetable.py` 文件，填写 `username` 和 `password` 为浙大统一身份认证账户密码，运行程序（默认生成2022-2023学年秋冬课表）。
+下载 `timetable.py` 文件，找到第231和234行，填写 `username` 和 `password` 为浙大统一身份认证账户密码，运行程序（默认生成2022-2023学年秋冬课表，所以其他数据如`data`, `holiday`, `exchange`不需要改动）。
 
 ### Step3
 运行 `timetable.py `文件，在同目录下生成 `timetable.ics` 文件，将该文件导入`Apple`日历，大功告成！
