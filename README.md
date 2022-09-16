@@ -31,7 +31,12 @@ pip install icalendar
 运行 `timetable.py `文件，在同目录下生成 `timetable.ics` 文件，将该文件导入`Apple`日历，大功告成！
 <img width="687" alt="截屏2022-08-31 22 04 39" src="https://user-images.githubusercontent.com/59506669/187709391-a342e111-a66b-4544-af0c-4a547c463770.png">
 
-### 生成自定义学期课表的方法
+### Step4(可选)
+如果您只有一台iPhone设备，不是MacBook + iPhone的用户，可能会遇到导入不全的问题，不过这也一样没问题。此时，您必须使用iPhone的`邮箱`app来导入日历。有两个方法可供您选择：
+1. 将`timetable.ics`作为附件发送到iPhone的`邮箱`app中（可以发送到自己iCloud邮箱中）。
+2. 先将`timetable.ics`放到`文件`app中，然后长按选中`timetable.ics`，点击共享，选择`邮箱`app，发送一份邮件给自己。此时点击邮件附件中的`timetable.ics`，点击右上角“添加全部”，选择想要导入到的日历即可。
+
+### 进阶技巧：生成自定义学期课表的方法
 `data`表示学年，这里应替换成您希望生成课表的学年。
 ```python3
 data = {'xnm': '2022-2023'}
