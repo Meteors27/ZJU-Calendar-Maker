@@ -97,6 +97,7 @@ class TimeTable(object):
         cal.add('X-APPLE-CALENDAR-COLOR', '#540EB9')
         cal.add('X-WR-TIMEZONE', 'Asia/Shanghai')
         cal.add('VERSION', '2.0')
+        cnt = 0
         for semester in self.semester_info:
             sem = semester['semester']  # 学期
             start = date.fromisoformat(semester['start'])  # 开始日期
@@ -112,10 +113,8 @@ class TimeTable(object):
                     if len > 0:
                         '''制作event, 写入calendar'''
                         event = Event()
-                        # if lesson['location'].find('紫金港') != -1:
-                        #     location = '浙江大学紫金港校区' + lesson['location'].split('紫金港')[1]
-                        # note: uid 需要改进
-                        event.add('uid', f'{datetime.now().timestamp()}@meteors')
+                        cnt += 1
+                        event.add('uid', f'zjucalendarmaker@{self.username}@{datetime.now().timestamp()}@{cnt}')
                         start_time, end_time = self._convert(lesson, len)
                         dtstart = datetime.combine(_date, start_time)
                         dtend = datetime.combine(_date, end_time)
@@ -246,7 +245,7 @@ if __name__ == "__main__":
         ['2022-10-01', '2022-10-07'],
         ['2022-10-21', '2022-10-23']
     ]
-    
+
     exchange = [
         ['2022-10-08', '2022-10-06'],
         ['2022-10-09', '2022-10-07'],
@@ -258,3 +257,5 @@ if __name__ == "__main__":
     except Exception as err:
         exit('[error] ' + str(err))
         raise
+
+    '''还需要改地址,kaoshi,uid，上下连接'''
