@@ -114,7 +114,7 @@ class TimeTable(object):
                         '''制作event, 写入calendar'''
                         event = Event()
                         cnt += 1
-                        event.add('uid', f'zjucalendarmaker@{self.username}@{datetime.now().timestamp()}@{cnt}')
+                        event.add('uid', f'zju@{self.username}@{datetime.now().timestamp()}@{cnt%100}')
                         start_time, end_time = self._convert(lesson, len)
                         dtstart = datetime.combine(_date, start_time)
                         dtend = datetime.combine(_date, end_time)
@@ -227,10 +227,10 @@ def main(username, password, semester_info, data, holiday=[], exchange=[]):
 
 if __name__ == "__main__":
     '''请填写浙大统一身份认证的账户'''
-    username = '3200000000'
+    username = ''
 
     '''请填写浙大统一身份认证的密码'''
-    password = '12345678'
+    password = ''
 
     '''请填写想要查询的学年，格式为20xx-20xx，注意每次只能查询一个学年'''
     data = {'xnm': '2022-2023'}
@@ -242,14 +242,14 @@ if __name__ == "__main__":
     ]
 
     holiday = [
-        ['2022-04-05', '2022-04-05'],
-        ['2022-04-29', '2022-05-03'],
-        ['2022-04-29', '2022-05-03'],
+        ['2023-04-05', '2023-04-05'],
+        ['2023-04-29', '2023-05-03'],
+        ['2023-06-22', '2023-06-24'],
     ]
 
     exchange = [
-        ['2022-05-02', '2022-06-19'],
-        ['2022-05-03', '2022-05-14'],
+        ['2023-05-02', '2023-06-19'],
+        ['2023-05-03', '2023-05-14'],
     ]
 
     try:
